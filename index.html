@@ -32,9 +32,9 @@
       $('.burgerMenu').click(function(){
         $('.-navMenu').slideToggle("fast");
       });
-      // $('.link').click(function(){
-      //   $('.-navMenu').slideToggle("fast");
-      // });
+      $('.mask').click(function(){
+        $('.-navMenu').slideToggle("fast");
+      });
     });//]]>
 
     </script>
@@ -49,11 +49,11 @@
       <div class="content -logo"><img class="logo" src="/static/ui/logoWhite.png"></div>
       <div class="content w75 -pushRight -navMenu">
         <ul class="navMenu">
-          <li><a href="#1" class="link">Hakkımızda</a></li>
-          <li><a href="#2" class="link">Katılımcılar</a></li>
-          <li><a href="#3" class="link">Program</a></li>
-          <li><a href="#4" class="link">Destekleyenler</a></li>
-          <li><a href="#5" class="link">İletişim</a></li>
+          <li><a href="#1"><div class="mask"></div>Hakkımızda</a></li>
+          <li><a href="#2"><div class="mask"></div>Katılımcılar</a></li>
+          <li><a href="#3"><div class="mask"></div>Program</a></li>
+          <li><a href="#4"><div class="mask"></div>Destekleyenler</a></li>
+          <li><a href="#5"><div class="mask"></div>İletişim</a></li>
         </ul>
       </div>
       <div class="-mobileOnly burgerMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -109,7 +109,7 @@
     <div class="row">
 
     <div class="cell w25 -titleSection -mobileNone"></div>
-      <div class="cell w75 -pushRight -titleSection">Katilimcilar</div>
+      <div class="cell w75 -pushRight -titleSection">Katılımcılar</div>
 
       <div class="cell w25 -center _portrait">
         <div class="portrait"><img src="/static/ui/portraits/ali-erhart.png"></div>

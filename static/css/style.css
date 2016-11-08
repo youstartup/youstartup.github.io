@@ -2,9 +2,7 @@
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff821e+1,ff008c+100 */
   background: #ff821e;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #ff821e 1%, #ff008c 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #ff821e 1%, #ff008c 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #ff821e 1%, #ff008c 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -179,6 +177,21 @@
   float: left;
 }
 
+.mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .mask {
+    display: block;
+  }
+}
+
 .-mobileOnly {
   display: none;
 }
@@ -213,7 +226,6 @@ body {
 @media only screen and (max-width: 750px) {
   body {
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
