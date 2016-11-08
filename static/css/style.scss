@@ -1,0 +1,694 @@
+$mobile: 500px;
+$tablet: 750px;
+$desktop: 1000px;
+
+$profilePic: 50px;
+$unitOfMeasure: 50px;
+
+// light theme
+$frameColor: #cfd2da;
+$iconBgColor: $frameColor;
+$backgroundColor: white;
+$bodyTextColor: #434857;
+$primaryAction: #00BFFF;
+$secondaryAction: #B0C4DE;
+$actionConfirm: #00FF7F;
+$actionDecline: #DC143C;
+$navHighlight: #cfd2da;
+$tabColor: #00BFFF;
+$footerBgColor: #6D6E71;
+$placeholderColor: #eee;
+$fixedMenuBg: #434857;
+$notificationBg: red;
+$selectedMenuItem: $primaryAction;
+$placeholderColor: #aaa;
+$autoActionsBg: #F8F8FF;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $tablet) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $tablet + 1 ) and (max-width: $desktop - 1) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $desktop) { @content; }
+  }
+}
+@mixin transition{
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+@import "custom";
+
+.-mobileOnly{ @include respond-to(mobile) { display: block!important; } display: none; }
+.-mobileNone{ @include respond-to(mobile) { display: none!important; } display: block; }
+
+body{
+  margin:0px;
+  padding:0px;
+  font-family: 'Libre Franklin', sans-serif;
+  // font-family: 'Libre Franklin', sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1;
+  vertical-align: baseline;
+  height: 100%;
+  @include respond-to(mobile) {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+}
+ol, ul, li, p, h1, h2, h3, h4, h5, h6{
+  margin:0px;
+  padding:0px;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+  position: relative;
+  float:left;
+  font-weight: 300;
+}
+h2{ font-size: 16px; }
+h3{ font-size: 14px; }
+div, span, p, ul, li,  h1, h2, h3, h4, h5, h6, .-icon, input, textarea, button, select{ box-sizing: border-box; }
+a{ text-decoration: none; color: black; }
+select::-ms-expand { display: none; }
+input:focus{ outline: none; }
+::-webkit-input-placeholder { color:$placeholderColor; }
+:-moz-placeholder { color:$placeholderColor; opacity:1;} /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color:$placeholderColor; opacity:1; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color:$placeholderColor; }
+input, textarea, select, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border:0px;
+  font-family: "Roboto", sans-serif;
+}
+.-center{ text-align: center; }
+.-right{ text-align: right; }
+.-clickable{ cursor: pointer; }
+.-pushRight{ float:right !important; }
+.-pushLeft{ float:left !important; }
+.-centerMe{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: table;
+  float: none !important;
+}
+.-frame{ border:1px solid $frameColor; }
+///
+body{
+  background-color: $backgroundColor;
+  color: $bodyTextColor;
+}
+.-view{ height:500px; }
+.-view, .-viewFlex{
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-color: $placeholderColor;
+  .row{ padding:100px 0px 50px 0px;}
+  h2{
+    width:100%;
+    font-size: 26px;
+  }
+  .ctaMessage{
+    float:left;
+    padding:10px 0px;
+  }
+}
+
+.-navigation{
+  position: fixed !important;
+  top:0px;
+  left:0px;
+  right:0px;
+  // background-color: black;
+  border-bottom:1px solid $frameColor;
+  background-color: rgba(255,255,255,0.9);
+  height: ($unitOfMeasure * 2);
+  z-index: 1000;
+  .-logo{ border-radius: 0px; }
+  .logo{
+    position: relative;
+    float: left;
+    padding:0px 10px 0px 10px;
+  }
+  .burgerMenu{
+    position: absolute;
+    right:0px;
+    width: $unitOfMeasure;
+    font-size: 28px;
+    line-height: ($unitOfMeasure *2);
+  }
+  .-navMenu{
+    @include respond-to(mobile) { width:100%; display: none; }
+  }
+  .navMenu{
+    position: relative;
+    float:right;
+    font-size: 14px;
+    .highlight{
+      background-color: $navHighlight;
+      color: black;
+    }
+    li:last-child{ border-right: 0px; }
+    li{
+      @include respond-to(mobile) {
+        width: 100%;
+        line-height: $unitOfMeasure;
+        border-right-width: 0px;
+        border-bottom: 1px solid $frameColor;
+        background-color: rgba(255,255,255,0.9);
+      }
+      position: relative;
+      float:left;
+      text-align: center;
+      min-width: $profilePic;
+      line-height: ($unitOfMeasure * 2);
+      border-right: 1px solid $frameColor;
+      padding:0px 20px;
+    }
+  }
+}
+.-footer{
+  background-color: $footerBgColor;
+  min-height: 150px;
+  margin-top:100px;
+  padding-top:50px;
+
+  // width: 100%;
+  //   height: 100px;
+  //   position: absolute !important;
+  //   bottom: 0;
+  //   left: 0;
+
+}
+$iconWidth: 50px;
+$labelWidth: 150px;
+$fixedGap: 5px;
+.fixedMenu{
+  position: fixed;
+  background-color: $fixedMenuBg;
+  color: white;
+  z-index: 10000;
+  &.-fixedMenuVertical{
+    @include respond-to(mobile) {
+      width: 100% !important;
+      display: none;
+      top:50px;
+    }
+    top:0px;
+    left:0px;
+    bottom:0px;
+
+    &.-iconized{ width: $iconWidth; }
+    &.-labelized{ width: ($labelWidth + $iconWidth); }
+    .fixedMenuItems{
+      @include respond-to(mobile) { width: 100%; }
+      width: ($labelWidth + $iconWidth);
+      li{
+        width: 100%;
+        margin-left: $fixedGap;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        .-icon, .-label{
+          height: $unitOfMeasure;
+          line-height: $unitOfMeasure;
+        }
+        .-icon{ width: ($iconWidth - $fixedGap); }
+      }
+      .fixedChildMenu{
+        position: relative;
+        float:left;
+        width:100%;
+        padding-bottom: 10px;
+        li{
+          height: ($unitOfMeasure / 2);
+          line-height: ($unitOfMeasure / 2);
+          background-color: transparent;
+          border-bottom: 0px;
+          margin:0px;
+          .-icon, .-label{
+            height: ($unitOfMeasure / 2);
+            line-height: ($unitOfMeasure / 2);
+          }
+          .-icon{ font-size: 12px; }
+          .-label{ font-size: 10px; }
+        }
+      }
+    }
+  }
+  &.-fixedMenuHorizontal{
+    top:0px;
+    left:0px;
+    right:0px;
+    &.-iconized{ width: 100%; height: 50px; }
+    &.-labelized{ width: 100%; height: 100px; }
+    .fixedMenuItems{
+      width: 100%;
+      li:first-child{
+        width:200px;
+        .-label{ height: $unitOfMeasure; line-height: $unitOfMeasure; }
+      }
+      li{
+        width:auto;
+        border-right: 1px solid rgba(255,255,255,0.2);
+        padding:0px 5px;
+        .-icon, .-label{
+          height: ($unitOfMeasure);
+          line-height: ($unitOfMeasure);
+          width: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &.-iconized, &.-labelized{ overflow: hidden; }
+  &.-mobileAction{
+    // position: relative;
+    // float:left;
+    .-icon{
+      position: relative;
+      float:left;
+      text-align: center;
+      display: inline-block;
+      width: $iconWidth;
+      height: $unitOfMeasure;
+      line-height: $unitOfMeasure;
+    }
+  }
+}
+.fixedMenuItems{
+  position: relative;
+  float:left;
+  li:first-child{ background-color: black; }
+  .selected{ background-color: $selectedMenuItem; }
+  li{
+    position: relative;
+    float:left;
+    display: block;
+    .-icon, .-label{
+      position: relative;
+      float:left;
+      display: inline-block;
+    }
+    .-icon{ text-align: center; }
+    .-profilePic{
+      position: relative;
+      float:left;
+      height: $unitOfMeasure;
+      width: $iconWidth;
+      margin-left: -$fixedGap;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    // .-extend{
+    //   height: 25px;
+    //   line-height: 25px;
+    // }
+    .-label{
+      width: $labelWidth;
+      text-align: left;
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0px 5px;
+    }
+    .-notification{
+      position: absolute;
+      height:20px;
+      width: 20px;
+      top:5px;
+      left: 20px;
+      line-height: 20px;
+      font-size: 10px;
+      border-radius: 100px;
+      text-align: center;
+      color: white;
+      background-color: $notificationBg;
+      z-index: 10;
+    }
+  }
+  .fixedChildMenu{
+    position: relative;
+    float:left;
+    width:100%;
+    padding-bottom: 10px;
+    li{
+      height: ($unitOfMeasure / 2);
+      line-height: ($unitOfMeasure / 2);
+      background-color: transparent;
+      border-bottom: 0px;
+      margin:0px;
+      .-icon, .-label{
+        height: ($unitOfMeasure / 2);
+        line-height: ($unitOfMeasure / 2);
+      }
+      .-icon{ font-size: 12px; }
+      .-label{ font-size: 10px; }
+    }
+  }
+}
+.masterContainer{
+  position: relative;
+  float:left;
+  width: 100%;
+  min-height: 100%;
+  // &.-vertical{
+  //   @include respond-to(mobile) { padding-left: 0px; }
+  //   padding-left: $iconWidth;
+  // }
+}
+.container{
+  position: relative;
+  width:100%;
+  float:left;
+}
+.row{
+  @include respond-to(mobile) {
+    width: 100%;
+    left: 0px;
+    margin-left: 0px;
+  }
+  @include respond-to(tablet) {
+    width:$tablet;
+    margin-left: -($tablet / 2);
+  }
+  position: relative;
+  width:$desktop;
+  margin-left: -($desktop / 2);
+  left:50%;
+  display: table;
+}
+.w100{ width: 99%; }
+.w75{ width: 74%; @include respond-to(mobile) { width: 99%; } }
+.w70{ width: 69%; @include respond-to(mobile) { width: 99%; } }
+.w60{ width: 59%; @include respond-to(mobile) { width: 99%; } }
+.w50{ width: 49%; @include respond-to(mobile) { width: 99%; } }
+.w33{ width: 32.333%; @include respond-to(mobile) { width: 99%; } }
+.w25{ width: 24%; @include respond-to(mobile) { width: 49%; } }
+.w20{ width: 19%; @include respond-to(mobile) { width: 49%; } }
+.w10{ width: 9%; @include respond-to(mobile) { width: 49%; } }
+.content{
+  position: relative;
+  float:left;
+  border-radius: 5px;
+  p, span{
+    padding: 10px;
+    float: left;
+  }
+}
+.cell{
+  position: relative;
+  float:left;
+  margin: 0.5%;
+  font-size: 16px;
+  line-height: 19px;
+  div, span{ position: relative; float:left;}
+  .-fill{
+    background-color: $frameColor;
+    .titlePrimary, .titleSub{
+      &.-underline{ border-bottom: 1px solid $backgroundColor; }
+    }
+    // .-dense{
+    //   .-icon{ border-color: $backgroundColor; }
+    // }
+    // .-clear{
+    //   .-icon{ padding: 0px 5px; }
+    // }
+  }
+  &.-titleSection{
+    font-size: 26px;
+    font-weight: 300;
+    //border-bottom: 1px solid $frameColor;
+    border-radius: 0px;
+    padding:20px 5px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    &.-underline{ border-bottom: 1px solid $frameColor; }
+  }
+  .titlePrimary, .titleSub, .titleSections{
+    position: relative;
+    width: 100%;
+    float :left;
+    font-weight: 300;
+    padding:10px 0px;
+    line-height: 25px;
+    &.-underline{ border-bottom: 1px solid $frameColor; }
+    &.-highlight{ background-color: $frameColor; }
+    h1, h2, h3{
+      padding: 0px 10px;
+    }
+    .-iconTitle{
+      position: relative;
+      float:left;
+      height:25px;
+      font-size: 14px;
+      line-height: 25px;
+      text-align: center;
+      text-align: center;
+      // margin-right: 5px;
+      padding:0px 0px 0px 10px;
+    }
+  }
+  .titlePrimary{ font-size: 16px; }
+  .titleSub{ font-size: 14px; }
+  .titleSections{ padding: 0px; }
+}
+.tabSections{
+  position: relative;
+  float:left;
+  font-size: 16px;
+  li{
+    position: relative;
+    float:left;
+    padding:0px 10px;
+  }
+  .selected{ border-bottom: 3px solid $tabColor; }
+}
+.tabs{
+  position: relative;
+  float:left;
+  li{
+    position: relative;
+    float:left;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: $tabColor;
+    color: $bodyTextColor;
+    padding:5px 7px;
+    font-size: 12px;
+    line-height: 14px;
+    //margin-top: -1px;
+  }
+  .selected{
+    background-color: $tabColor;
+    color:white;
+  }
+  li:first-child{
+    border-left-width: 1px;
+    border-radius: 5px 0px 0px 5px;
+  }
+  li:last-child{
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+.actionContainer{
+  position: relative;
+  float: left;
+  width:100%;
+  margin:0px !important;
+  padding:10px;
+}
+.actionContainerInline{
+  position: relative;
+  float: right;
+  padding: 0px 10px;
+  // &.-clear{
+  //   .-icon{ padding:0px 2.5px; }
+  // }
+  li{
+    position: relative;
+    float:left;
+    text-align: center;
+    margin: 0px 2.5px;
+    border-radius: 3px;
+    height:25px;
+    line-height: 25px;
+    // font-size: 13px;
+  }
+  .-icon-label{
+    .-icon{ }
+    .-label{
+      float:right;
+      padding:0px 5px 0px 0px;
+      &.-pushLeft{ padding:0px 0px 0px 5px; }
+    }
+  }
+  .-icon{ min-width:25px; }
+  .-label{
+    font-size: 12px;
+    padding:0px 5px;
+  }
+  .-icon-label, .-icon, .-label{
+    &.-clear{ color: $bodyTextColor; }
+    &.-primary{ color: $primaryAction; }
+    &.-highlight{ background-color: $secondaryAction; }
+    &.-primary-highlight{ background-color: $primaryAction; color: black; }
+    &.-confirm{ background-color: $actionConfirm; }
+    &.-decline{ background-color: $actionDecline; color: white; }
+  }
+}
+.field{
+  position: relative;
+  float:left;
+  text-align: left;
+  font-weight: 400;
+  padding: 0px 10px;
+  line-height: 40px;
+  margin:0.5%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 5px;
+  border:1px solid $frameColor;
+}
+.action{
+  position: relative;
+  float:left;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0px 10px;
+  line-height: 40px;
+  margin:0.5%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 5px;
+  $actionBorderWidth: 1px;
+  .inlineIcon{ margin: 0px 5px; }
+  &.-icon{
+    width:50px;
+    padding:0px;
+    cursor: pointer;
+  }
+  &.-primaryAction, &.-secondaryAction, &.-ghostAction, &.-confirmAction, &.-declineAction{
+    border-width: $actionBorderWidth;
+    border-style: solid;
+  }
+  &.-primaryAction{
+    border-color: $primaryAction;
+    background-color: $primaryAction;
+    color: white;
+  }
+  &.-secondaryAction{
+    border-color: $secondaryAction;
+    background-color: $secondaryAction;
+    color: black;
+  }
+  &.-ghostAction{
+    border-color: $secondaryAction;
+    color: $secondaryAction;
+  }
+  &.-confirmAction{
+    border-color: $actionConfirm;
+    background-color: $actionConfirm;
+    color: black;
+  }
+  &.-declineAction{
+    border-color: $actionDecline;
+    color: $actionDecline;
+  }
+}
+.-userCell:nth-child(even), .-autoCell:nth-child(even) { background-color: rgba(0,0,0,0.03); }
+.-userCell, .-autoCell{
+  border-radius: 0px !important;
+  border-bottom:1px solid #eee;
+  // margin-bottom: 5px;
+  padding:5px 0px;
+  .profilePic{
+    position: relative;
+    float:left;
+    width: $unitOfMeasure;
+    height: $unitOfMeasure;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:1px solid #eee;
+  }
+  .userName, .screenName, .location, .keyword{
+    position: relative;
+    float:left;
+    margin: 0px 5px;
+    padding:0px 5px;
+  }
+  .screenName{ color: #ccc; }
+}
+.-userCell{
+
+  .userName, .screenName, .location{
+    height: ($unitOfMeasure / 2);
+    line-height: ($unitOfMeasure / 2);
+  }
+  .location{
+    background-color: cyan;
+    border-radius: 3px;
+  }
+  .stats{
+    position: absolute;
+    top:30px;
+    left:60px;
+    height: ($unitOfMeasure / 2);
+    line-height: ($unitOfMeasure / 2);
+    color: #aaa;
+    li{
+      position: relative;
+      float:left;
+      padding-right: 10px;
+      font-size: 11px;
+    }
+  }
+  .desc{ padding-left: 50px; }
+}
+.-autoCell{
+
+  .identifier{
+    position: relative;
+    float:left;
+  }
+  .userName, .screenName, .keyword{ width:100%; }
+  .keyword{
+    height: $unitOfMeasure;
+    line-height: $unitOfMeasure;
+  }
+  .userName, .screenName{
+    height: ($unitOfMeasure / 2);
+    line-height: ($unitOfMeasure / 2);
+  }
+  .stats{
+    position: relative;
+    float:left;
+    li{
+      position: relative;
+      float:left;
+      width:33.333%;
+      height: $unitOfMeasure;
+      line-height: $unitOfMeasure;
+      padding:0px 5px;
+    }
+    .rate{
+      font-size: 26px;
+    }
+  }
+  .actionContainerInline{ padding-top: 12.5px; }
+}
+
