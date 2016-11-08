@@ -22,15 +22,15 @@ color:white;
       padding: 0px 10px;
       font-size: 32px;
     }
-    color: black;
+    // color: white;
     font-size: 46px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: initial;
 
     // top:75px;
     // height: 250px;
     // padding-bottom:10px;
-    // text-shadow: 0px 0px 20px black;
+    // text-shadow: 0px 0px 100px black;
   }
   .ctaMessage{
     @include respond-to(mobile) {
@@ -91,6 +91,7 @@ color:white;
 ._portrait{
   padding-bottom: 30px;
   color: white;
+  height:280px;
   .portrait{
     position: relative;
     float:left;
@@ -99,12 +100,27 @@ color:white;
     text-align: center;
     margin-bottom: 10px;
   }
+  .smShare{
+    position: relative;
+    float:left;
+    width:100%;
+    a{ color: white; }
+    li:nth-child(odd){ text-align: right; }
+    li:nth-child(even){ text-align: left; }
+    .smIcon{
+      position: relative;
+      float:left;
+      width:50%;
+      padding:5px 2.5px 0px 2.5px;
+      font-size: 20px;
+    }
+  }
   b{
     position: relative;
     float:left;
     width:100%;
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 .-footer{
