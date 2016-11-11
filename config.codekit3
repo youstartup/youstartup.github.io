@@ -134,6 +134,38 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/static\/ui\/organization\/gaun.png": {
+		"ft": 32768,
+		"iS": 7774,
+		"oA": 0,
+		"oAP": "\/static\/ui\/organization\/gaun.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/static\/ui\/organization\/target.png": {
+		"ft": 32768,
+		"iS": 3338,
+		"oA": 0,
+		"oAP": "\/static\/ui\/organization\/target.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/static\/ui\/organization\/teknopark.png": {
+		"ft": 32768,
+		"iS": 10434,
+		"oA": 0,
+		"oAP": "\/static\/ui\/organization\/teknopark.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/static\/ui\/organization\/youstartup.png": {
+		"ft": 32768,
+		"iS": 3668,
+		"oA": 0,
+		"oAP": "\/static\/ui\/organization\/youstartup.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/static\/ui\/portraits\/ali-erhart.png": {
 		"ft": 32768,
 		"iS": 32052,
@@ -243,6 +275,14 @@
 		"iS": 5543,
 		"oA": 0,
 		"oAP": "\/static\/ui\/supporters\/fi.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/static\/ui\/supporters\/gba.png": {
+		"ft": 32768,
+		"iS": 6125,
+		"oA": 0,
+		"oAP": "\/static\/ui\/supporters\/gba.png",
 		"oF": 0,
 		"opt": 0
 		},
