@@ -126,6 +126,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/static\/ui\/ctaBg3.jpg": {
+		"ft": 16384,
+		"iS": 116989,
+		"oA": 0,
+		"oAP": "\/static\/ui\/ctaBg3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/static\/ui\/ctaBg4.jpg": {
+		"ft": 16384,
+		"iS": 120096,
+		"oA": 0,
+		"oAP": "\/static\/ui\/ctaBg4.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/static\/ui\/logoWhite.png": {
 		"ft": 32768,
 		"iS": 2782,
@@ -299,6 +315,14 @@
 		"oAP": "\/static\/ui\/supporters\/hq.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/static\/ui\/supporters\/indisera.png": {
+		"ft": 32768,
+		"iS": 24097,
+		"oA": 0,
+		"oAP": "\/static\/ui\/supporters\/indisera.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/static\/ui\/supporters\/patica.png": {
 		"ft": 32768,

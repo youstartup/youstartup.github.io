@@ -10,7 +10,7 @@ color:white;
 }
 ._solidBg{ background-color: #eee; }
 ._ctaBg{
-  background-image: url(/static/ui/ctaBg2.jpg);
+  background-image: url(/static/ui/ctaBg4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom left !important;
@@ -22,7 +22,7 @@ color:white;
       padding: 0px 10px;
       font-size: 32px;
     }
-    // color: white;
+    color: white;
     font-size: 46px;
     font-weight: 200;
     line-height: initial;
@@ -30,7 +30,13 @@ color:white;
     // top:75px;
     // height: 250px;
     // padding-bottom:10px;
-    // text-shadow: 0px 0px 100px black;
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+  }
+  .subCta{
+    @include respond-to(mobile) {
+      font-size: 22px;
+    }
+    font-size: 30px;
   }
   .ctaMessage{
     @include respond-to(mobile) {
