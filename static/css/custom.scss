@@ -60,28 +60,38 @@ color:white;
 .masterContainer{ margin-top: 100px; }
 ._timetable{
   ul{
-    li:nth-child(odd){
-      border-right: 1px solid lighten($frameColor, 10%);
+    li:nth-child(even){
+      border-left: 1px solid lighten($frameColor, 10%);
     }
     li{
       @include respond-to(mobile) {
         width:45% !important;
         margin:0px 2.5%;
       }
-      height: 50px;
-      line-height: 50px;
-
+      // height: 50px;
+      // line-height: 50px;
+      padding:10px 0px;
       margin-top:0px;
       margin-bottom: 0px;
     }
   }
-  .-right:after{
+  // .-right:after{
+  //   font-family: fontAwesome;
+  //   content: "\f111";
+  //   position: relative;
+  //   float:right;
+  //   margin-left:10px;
+  //   margin-right: -4.5px;
+  //   font-size: 8px;
+  // }
+  .-left:before{
     font-family: fontAwesome;
     content: "\f111";
     position: relative;
-    float:right;
-    margin-left:10px;
-    margin-right: -4.5px;
+    float:left;
+    margin-right:10px;
+    margin-bottom: 30px;
+    margin-left: -4px;
     font-size: 8px;
   }
 }
