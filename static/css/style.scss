@@ -41,6 +41,7 @@ $autoActionsBg: #F8F8FF;
 }
 
 @import "custom";
+@import "lightbox";
 
 .-mobileOnly{ @include respond-to(mobile) { display: block!important; } display: none; }
 .-mobileNone{ @include respond-to(mobile) { display: none!important; } display: block; }
@@ -112,7 +113,10 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   // background-color: $placeholderColor;
-  .row{ padding:100px 0px 50px 0px;}
+  .row{
+    @include respond-to(mobile) { padding:10px; }
+    padding:100px 0px 50px 0px;
+  }
   h2{
     width:100%;
     font-size: 26px;
@@ -129,15 +133,25 @@ body{
   left:0px;
   right:0px;
   // background-color: black;
-  border-bottom:1px solid $frameColor;
-  background-color: rgba(255,255,255,0.9);
-  height: ($unitOfMeasure * 2);
+  // border-bottom:1px solid $frameColor;
+  background-color: rgba(255,255,255,1);
+  height: ($unitOfMeasure);
   z-index: 1000;
+  .bottomSlashWhite{
+    position: absolute;
+    bottom:-50px;
+    height:50px;
+    width:100%;
+    background: url(/static/ui/bgSlash-fff.png) center top no-repeat;
+    background-size: cover;
+    z-index: -5;
+  }
   .-logo{ border-radius: 0px; }
   .logo{
     position: relative;
     float: left;
     padding:0px 10px 0px 10px;
+    margin-top: -18px;
   }
   .burgerMenu{
     position: absolute;
@@ -157,27 +171,33 @@ body{
       background-color: $navHighlight;
       color: black;
     }
-    li:last-child{ border-right: 0px; }
-    li{
+    // li:last-child{ border-right: 0px; }
+    a{
       @include respond-to(mobile) {
         width: 100%;
         line-height: $unitOfMeasure;
         border-right-width: 0px;
         border-bottom: 1px solid $frameColor;
-        background-color: rgba(255,255,255,0.9);
+
       }
+      // background-color: white;
+      color: rgba(0,0,0,0.4);
+      // background-color: rgba(255,255,255,0.8);
+      margin: 30px 2.5px 0px 2.5px;
+      padding:5px 10px;
+      // border-radius: 3px;
       position: relative;
       float:left;
       text-align: center;
       min-width: $profilePic;
-      line-height: ($unitOfMeasure * 2);
-      border-right: 1px solid $frameColor;
-      padding:0px 5px;
+      // line-height: ($unitOfMeasure * 2);
+      // border-right: 1px solid $frameColor;
+      // padding:0px 10px;
     }
   }
 }
 .-footer{
-  background-color: $footerBgColor;
+  // background-color: $footerBgColor;
   min-height: 150px;
   margin-top:100px;
   padding-top:50px;
@@ -387,15 +407,15 @@ $fixedGap: 5px;
   left:50%;
   display: table;
 }
-.w100{ width: 99%; }
-.w75{ width: 74%; @include respond-to(mobile) { width: 99%; } }
-.w70{ width: 69%; @include respond-to(mobile) { width: 99%; } }
-.w60{ width: 59%; @include respond-to(mobile) { width: 99%; } }
-.w50{ width: 49%; @include respond-to(mobile) { width: 99%; } }
-.w33{ width: 32.333%; @include respond-to(mobile) { width: 99%; } }
-.w25{ width: 24%; @include respond-to(mobile) { width: 99%; } }
-.w20{ width: 19%; @include respond-to(mobile) { width: 49%; } }
-.w10{ width: 9%; @include respond-to(mobile) { width: 49%; } }
+.w100{ width: 100%; }
+.w75{ width: 75%; @include respond-to(mobile) { width: 99%; } }
+.w70{ width: 70%; @include respond-to(mobile) { width: 99%; } }
+.w60{ width: 60%; @include respond-to(mobile) { width: 99%; } }
+.w50{ width: 50%; @include respond-to(mobile) { width: 99%; } }
+.w33{ width: 33.333%; @include respond-to(mobile) { width: 99%; } }
+.w25{ width: 25%; @include respond-to(mobile) { width: 99%; } }
+.w20{ width: 20%; @include respond-to(mobile) { width: 49%; } }
+.w10{ width: 10%; @include respond-to(mobile) { width: 49%; } }
 .content{
   position: relative;
   float:left;
@@ -408,10 +428,14 @@ $fixedGap: 5px;
 .cell{
   position: relative;
   float:left;
-  margin: 0.5%;
+  // margin: 0.5%;
   font-size: 16px;
   line-height: 19px;
+  p{
+    padding: 10px;
+  }
   div, span{ position: relative; float:left;}
+  &.-underline{ border-bottom: 1px solid $frameColor; }
   .-fill{
     background-color: $frameColor;
     .titlePrimary, .titleSub{
@@ -429,7 +453,7 @@ $fixedGap: 5px;
     font-weight: 300;
     //border-bottom: 1px solid $frameColor;
     border-radius: 0px;
-    padding:20px 5px;
+    padding:20px 10px;
     margin-bottom: 10px;
     margin-top:10px;
     &.-underline{ border-bottom: 1px solid $frameColor; }
@@ -558,7 +582,9 @@ $fixedGap: 5px;
   white-space: nowrap;
   overflow: hidden;
   border-radius: 5px;
-  border:1px solid $frameColor;
+  font-size: 18px;
+  border:2px solid $frameColor;
+  &.-transparent{ background-color: transparent; color:white; }
 }
 .action{
   position: relative;
@@ -573,7 +599,8 @@ $fixedGap: 5px;
   white-space: nowrap;
   overflow: hidden;
   border-radius: 5px;
-  $actionBorderWidth: 1px;
+  font-size: 18px;
+  $actionBorderWidth: 2px;
   .inlineIcon{ margin: 0px 5px; }
   &.-icon{
     width:50px;

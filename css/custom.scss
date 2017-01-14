@@ -1,0 +1,259 @@
+/*custom css file*/
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+body{
+  padding-top: 50px;
+}
+ul, li{ padding:0px; margin:0px; list-style: none; }
+footer{
+  background-color: black;
+  color: white;
+  // padding-bottom: 100px;
+}
+.modal-dialog{
+  // position: absolute
+  // top:50%;
+  // left:50%;
+  // transform: translate-y(-50%) !important;
+}
+.modal-header{ display: none;}
+.modal-body{ padding:0px !important; }
+.-paddingFix{
+  @include breakpoint(xs) {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  padding-top:100px;
+  padding-bottom:100px;
+}
+.navbar-toggle{
+  border-color: transparent !important;
+}
+.navbar-toggle:hover, .navbar-toggle:focus{ background-color: transparent !important; }
+.navbar-default{
+  background-color: rgba(255,255,255,0.9);
+  // border:0px;
+}
+// .navbar{ margin:20px 0px 0px 0px; height: 70px;}
+nav{
+  li{
+    a{
+      // padding-top:32px !important;
+      padding-right: 5px ;
+      padding-left: 5px ;
+    }
+  }
+}
+// nav:after{
+//   content: "";
+//   position: absolute;
+//   top:50px;
+//   height: 50px;
+//   width: 100%;
+//   background: url(/img/dividers/white-bottom-to-right.png) center center no-repeat;
+//   background-size: cover;
+//   z-index: -5;
+// }
+.navbar-brand{
+  margin: 0px;
+  padding:0px 10px;
+}
+// .-about, .-testimonials, .-timetable, .-list, .-events{ overflow: hidden; }
+
+.-about{
+  background: url(/img/bgLogoGhost.png) left top no-repeat;
+}
+// .-about:after{
+//   content: "";
+//   position: relative;
+//   float:left;
+//   bottom: -100px;
+//   height: 50px;
+//   margin-left:-15px;
+//   width: 110%;
+//   background: url(/img/dividers/gray-top-to-left.png) center center no-repeat;
+//   background-size: cover;
+//   z-index: 5;
+// }
+
+.-timetable{
+  li{
+    padding:0px 0px 40px 0px;
+    box-sizing:border-box;
+  }
+  li:nth-child(even){
+    border-left: 1px solid #ddd;
+  }
+  li:nth-child(odd){
+    padding-right: 30px;
+  }
+  li:nth-child(2):before{
+    color: #4caf50 !important;
+  }
+  li:nth-child(even):before{
+    font-family: fontAwesome;
+    content: "\f111";
+    position: relative;
+    color: #ccc;
+    float:left;
+    padding-right:20px;
+    // margin-bottom: 30px;
+    margin-left: -6px;
+    font-size: 14px;
+  }
+}
+.-testimonials{
+  twitterwidget{
+    // float:left;
+    // width: 25% !important;
+    margin: 0 auto
+  }
+}
+.-events{
+  .row{
+    a{ margin-top: 10px; margin-bottom: 10px; }
+  }
+}
+.-list{
+  input{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: white;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+  }
+  .btn{
+    border:1px solid white;
+    background-color: transparent;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: white;
+  }
+}
+// .-events:before{
+//   content: "";
+//   position: relative;
+//   float:left;
+//   top: -100px;
+//   height: 50px;
+//   margin-left:-15px;
+//   width: 110%;
+//   background: url(/img/dividers/gray-bottom-to-left.png) center center no-repeat;
+//   background-size: cover;
+//   z-index: 5;
+// }
+// .-events:after{
+//   content: "";
+//   position: relative;
+//   float:left;
+//   bottom: -100px;
+//   height: 50px;
+//   margin-left:-15px;
+//   width: 110%;
+//   background: url(/img/dividers/white-top-to-right.png) center center no-repeat;
+//   background-size: cover;
+//   z-index: 5;
+// }
+// .-list:after{
+//   content: "";
+//   position: relative;
+//   float:left;
+//   bottom: -100px;
+//   height: 50px;
+//   margin-left:-15px;
+//   width: 110%;
+//   background: url(/img/dividers/black-top-to-right.png) center center no-repeat;
+//   background-size: cover;
+//   z-index: 5;
+//   overflow: hidden;
+// }
+// .-list:before{
+//   content: "";
+//   position: relative;
+//   float:left;
+//   top: -100px;
+//   height: 50px;
+//   margin-left:-15px;
+//   width: 110%;
+//   background: url(/img/dividers/white-bottom-to-right.png) center center no-repeat;
+//   background-size: cover;
+//   z-index: 5;
+//   overflow: hidden;
+// }
+.jumbotron{
+  @include breakpoint(xs) { min-height: 250px; background-position: -150px top; }
+  @include breakpoint(sm) { min-height: 400px; background-position: left center; }
+  padding:0px;
+  margin-bottom:0px;
+  // min-height: 250px;
+  background-image: url(/img/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+  background-color: white;
+}
+.-grayBg{
+  background-color: #eee;
+}
+.-gradientBg{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff821e+1,ff008c+100 */
+  background: #ff821e; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #ff821e 1%, #ff008c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #ff821e 1%,#ff008c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #ff821e 1%,#ff008c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821e', endColorstr='#ff008c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color:white;
+}
+footer{
+    .btn{
+      margin:6px;
+      background-color: black;
+      color: white;
+    }
+  a{
+    padding:5px;
+    position: relative;
+    float:left;
+    // width:100%;
+    .fa{
+      font-size: 22px;
+      // padding-top:10px;
+    }
+
+    color: white;
+  }
+  a:hover{ color: white; }
+}
