@@ -9,6 +9,88 @@
 	],
 "creatorBuild": "25479",
 "files": {
+	"\/2017denizli\/hero.jpg": {
+		"ft": 16384,
+		"iS": 102834,
+		"oA": 0,
+		"oAP": "\/2017denizli\/hero.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/Icon\r",
+		"oF": 0
+		},
+	"\/2017denizli\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/index.html",
+		"oF": 0
+		},
+	"\/2017denizli\/participants\/ayse-inal.png": {
+		"ft": 32768,
+		"iS": 31806,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/ayse-inal.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/participants\/basar-kaya.png": {
+		"ft": 32768,
+		"iS": 31255,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/basar-kaya.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/participants\/ekim-nazim-kaya.png": {
+		"ft": 32768,
+		"iS": 37568,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/ekim-nazim-kaya.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/participants\/esranur-kaygin.png": {
+		"ft": 32768,
+		"iS": 37486,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/esranur-kaygin.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/participants\/fatih-guner.png": {
+		"ft": 32768,
+		"iS": 27315,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/fatih-guner.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/participants\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/participants\/Icon\r",
+		"oF": 0
+		},
+	"\/2017denizli\/participants\/mumtaz-hacipasaoglu.png": {
+		"ft": 32768,
+		"iS": 30776,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/mumtaz-hacipasaoglu.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/participants\/okan-sencan.png": {
+		"ft": 32768,
+		"iS": 39742,
+		"oA": 0,
+		"oAP": "\/2017denizli\/participants\/okan-sencan.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/css\/bootstrap-theme.css": {
 		"aP": 0,
 		"bl": 0,
@@ -532,14 +614,6 @@
 		"oAP": "\/img\/Icon\r",
 		"oF": 0
 		},
-	"\/img\/jumbotron.jpg": {
-		"ft": 16384,
-		"iS": 17868,
-		"oA": 0,
-		"oAP": "\/img\/jumbotron.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/img\/logoColor.png": {
 		"ft": 32768,
 		"iS": 2782,
@@ -682,6 +756,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/prepros.cfg": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/prepros.cfg",
+		"oF": 0
 		},
 	"\/presskit\/Icon\r": {
 		"ft": 8192,

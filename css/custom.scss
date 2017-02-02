@@ -97,6 +97,29 @@ nav{
 //   z-index: 5;
 // }
 
+.-timetableDenizli{
+  li{
+    padding:0px 0px 40px 0px;
+    box-sizing:border-box;
+  }
+  li:nth-child(even){
+    border-left: 1px solid #ddd;
+  }
+  li:nth-child(odd){
+    padding-right: 30px;
+  }
+  li:nth-child(even):before{
+    font-family: fontAwesome;
+    content: "\f111";
+    position: relative;
+    color: #ccc;
+    float:left;
+    padding-right:20px;
+    // margin-bottom: 30px;
+    margin-left: -6px;
+    font-size: 14px;
+  }
+}
 .-timetable{
   li{
     padding:0px 0px 40px 0px;
@@ -123,6 +146,7 @@ nav{
     font-size: 14px;
   }
 }
+
 .-testimonials{
   twitterwidget{
     // float:left;
@@ -212,6 +236,19 @@ nav{
 //   z-index: 5;
 //   overflow: hidden;
 // }
+.jumbotronDenizli{
+  @include breakpoint(xs) { min-height: 250px; background-position: -180px top; }
+  @include breakpoint(sm) { min-height: 400px; background-position: left center; }
+  padding:0px;
+  margin-bottom:0px;
+  // min-height: 250px;
+  background-image: url(/2017denizli/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+  background-color: white;
+}
 .jumbotron{
   @include breakpoint(xs) { min-height: 250px; background-position: -150px top; }
   @include breakpoint(sm) { min-height: 400px; background-position: left center; }
@@ -236,6 +273,7 @@ nav{
   background: linear-gradient(45deg,  #ff821e 1%,#ff008c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821e', endColorstr='#ff008c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   color:white;
+  a{ color: white; }
 }
 footer{
     .btn{
@@ -256,4 +294,17 @@ footer{
     color: white;
   }
   a:hover{ color: white; }
+}
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:450px; /* your iframe height */
+   top:450px;  /* your iframe height */
+   margin-top:-450px;  /* your iframe height */
+}
+
+.-participant{
+  margin: 25px 0px;
+  i{ font-size: 20px; }
 }

@@ -45,6 +45,26 @@ nav li a {
 .-about {
   background: url(/img/bgLogoGhost.png) left top no-repeat; }
 
+.-timetableDenizli li {
+  padding: 0px 0px 40px 0px;
+  box-sizing: border-box; }
+
+.-timetableDenizli li:nth-child(even) {
+  border-left: 1px solid #ddd; }
+
+.-timetableDenizli li:nth-child(odd) {
+  padding-right: 30px; }
+
+.-timetableDenizli li:nth-child(even):before {
+  font-family: fontAwesome;
+  content: "\f111";
+  position: relative;
+  color: #ccc;
+  float: left;
+  padding-right: 20px;
+  margin-left: -6px;
+  font-size: 14px; }
+
 .-timetable li {
   padding: 0px 0px 40px 0px;
   box-sizing: border-box; }
@@ -104,6 +124,24 @@ nav li a {
   /* Firefox 18- */
   color: white; }
 
+.jumbotronDenizli {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-image: url(/2017denizli/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+  background-color: white; }
+  @media (max-width: 767px) {
+    .jumbotronDenizli {
+      min-height: 250px;
+      background-position: -180px top; } }
+  @media (min-width: 768px) {
+    .jumbotronDenizli {
+      min-height: 400px;
+      background-position: left center; } }
+
 .jumbotron {
   padding: 0px;
   margin-bottom: 0px;
@@ -138,6 +176,8 @@ nav li a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821e', endColorstr='#ff008c',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   color: white; }
+  .-gradientBg a {
+    color: white; }
 
 footer .btn {
   margin: 6px;
@@ -154,3 +194,19 @@ footer a {
 
 footer a:hover {
   color: white; }
+
+.overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  /* your iframe height */
+  top: 450px;
+  /* your iframe height */
+  margin-top: -450px;
+  /* your iframe height */ }
+
+.-participant {
+  margin: 25px 0px; }
+  .-participant i {
+    font-size: 20px; }
