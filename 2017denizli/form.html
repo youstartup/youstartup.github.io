@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>YouStartup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/ekko-lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,600&amp;subset=latin-ext" rel="stylesheet">
+    <script src="/js/respond.js"></script>
+    <script src="/js/respond.js"></script>
+    <script src="https://use.fontawesome.com/049586c38c.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand"><img src="/img/logoColorIcon.png"></div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="collapse">
+            <ul class="nav navbar-nav ">
+                <li><a href="http://www.youstartup.co">Ana sayfa</a></li>
+                <li><a href="#pitchdeck">Pitch deck</a></li>
+                <li><a href="#katilimcilar">Katılımcılar</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<div class="container -paddingFix">
+  <div class="row">
+    <h2 class="col-md-11 col-xs-12 col-md-offset-1">Katılım Formu</h2>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+      <script type="text/javascript" src="https://form.jotform.com/jsform/70346273463355"></script>
+
+       <!-- <iframe id="JotFormIFrame-70346273463355" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotformeu.com/70346273463355" frameborder="0" style="width:100%; height:539px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script> -->
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid -paddingFix">
+  <div class="container">
+
+    <div class="row">
+    <!-- <h2 class="col-md-11 col-xs-12 col-md-offset-1">İletişim</h2> -->
+      <div class="col-md-6 col-xs-12 col-md-offset-1">
+        <a href="https://www.facebook.com/YouStartupCo">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="http://www.twitter.com/YouStartupCo">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="http://www.instagram.com/YouStartup">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:hi@youstartup.co">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+
+        <a href="presskit/presskit.zip" class="btn btn-default btn-xs">
+         Basın Kiti
+        </a>
+        <br><br>
+        2017 YouStartup
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <img src="/img/footer/teb.png" class="img-responsive pull-right">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- javascript -->
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/ekko-lightbox.js"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+
+    // $(document).ready(function() {
+    //   $('.thumbnail').click(function(){
+    //         $('.modal-body').empty();
+    //       var title = $(this).parent('a').attr("title");
+    //       $('.modal-title').html(title);
+    //       $($(this).parents('div').html()).appendTo('.modal-body');
+    //       $('#myModal').modal({show:true});
+    //   });
+    // });
+
+
+    $(window).load(function(){
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $(this).attr('href') ).offset().top
+          }, 500);
+          return false;
+      });
+    });
+  </script>
+
+</body>
+</html>

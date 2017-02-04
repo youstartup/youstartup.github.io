@@ -9,13 +9,19 @@
 	],
 "creatorBuild": "25479",
 "files": {
+	"\/2017denizli\/form.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/form.html",
+		"oF": 0
+		},
 	"\/2017denizli\/hero.jpg": {
 		"ft": 16384,
 		"iS": 102834,
 		"oA": 0,
 		"oAP": "\/2017denizli\/hero.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/2017denizli\/Icon\r": {
 		"ft": 8192,
@@ -90,12 +96,6 @@
 		"oAP": "\/2017denizli\/participants\/okan-sencan.png",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/2017denizli\/yatirimci-sunumu-template-turkce.zip": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/2017denizli\/yatirimci-sunumu-template-turkce.zip",
-		"oF": 0
 		},
 	"\/css\/bootstrap-theme.css": {
 		"aP": 0,
