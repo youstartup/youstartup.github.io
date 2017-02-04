@@ -35,7 +35,7 @@
 		"oA": 0,
 		"oAP": "\/2017denizli\/participants\/ayse-inal.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/2017denizli\/participants\/basar-kaya.png": {
 		"ft": 32768,
@@ -90,6 +90,12 @@
 		"oAP": "\/2017denizli\/participants\/okan-sencan.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/2017denizli\/yatirimci-sunumu-template-turkce.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/yatirimci-sunumu-template-turkce.zip",
+		"oF": 0
 		},
 	"\/css\/bootstrap-theme.css": {
 		"aP": 0,
