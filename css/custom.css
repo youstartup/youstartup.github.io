@@ -128,19 +128,14 @@ nav li a {
   padding: 0px;
   margin-bottom: 0px;
   background-image: url(/2017denizli/hero.jpg);
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
+  height: 500px;
   background-color: white; }
   @media (max-width: 767px) {
     .jumbotronDenizli {
-      min-height: 250px;
-      background-position: -180px top; } }
-  @media (min-width: 768px) {
-    .jumbotronDenizli {
-      min-height: 400px;
-      background-position: left center; } }
+      height: 250px; } }
 
 .jumbotron {
   padding: 0px;
@@ -214,3 +209,9 @@ footer a:hover {
 .-formButton {
   background-color: white !important;
   color: #ff6932 !important; }
+
+.-h500 {
+  height: 500px; }
+
+.-ptA {
+  padding-top: 150px; }

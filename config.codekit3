@@ -35,6 +35,36 @@
 		"oAP": "\/2017denizli\/index.html",
 		"oF": 0
 		},
+	"\/2017denizli\/organization\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/organization\/Icon\r",
+		"oF": 0
+		},
+	"\/2017denizli\/organization\/pau.png": {
+		"ft": 32768,
+		"iS": 15515,
+		"oA": 0,
+		"oAP": "\/2017denizli\/organization\/pau.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/organization\/teknokent.png": {
+		"ft": 32768,
+		"iS": 12850,
+		"oA": 0,
+		"oAP": "\/2017denizli\/organization\/teknokent.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/2017denizli\/organization\/youstartup.png": {
+		"ft": 32768,
+		"iS": 3538,
+		"oA": 0,
+		"oAP": "\/2017denizli\/organization\/youstartup.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/2017denizli\/participants\/ayse-inal.png": {
 		"ft": 32768,
 		"iS": 31806,

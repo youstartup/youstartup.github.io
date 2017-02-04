@@ -237,16 +237,17 @@ nav{
 //   overflow: hidden;
 // }
 .jumbotronDenizli{
-  @include breakpoint(xs) { min-height: 250px; background-position: -180px top; }
-  @include breakpoint(sm) { min-height: 400px; background-position: left center; }
+  @include breakpoint(xs) { height: 250px; }
+  // @include breakpoint(xs) { height: 250px; background-position: -180px top; background-size: cover; }
+  // @include breakpoint(sm) { height: 330px; background-size: cover; }
   padding:0px;
   margin-bottom:0px;
   // min-height: 250px;
   background-image: url(/2017denizli/hero.jpg);
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
+  height: 500px;
   background-color: white;
 }
 .jumbotron{
@@ -312,3 +313,5 @@ footer{
   background-color: white !important;
   color: #ff6932 !important;
 }
+.-h500{ height:500px; }
+.-ptA{ padding-top:150px; }
