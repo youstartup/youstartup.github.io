@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>YouStartup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,600&amp;subset=latin-ext" rel="stylesheet">
+    <script src="js/respond.js"></script>
+    <script src="js/respond.js"></script>
+    <script src="https://use.fontawesome.com/049586c38c.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand"><a href="index.html"><img src="img/logoColorIcon.png"></a></div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="collapse">
+            <ul class="nav navbar-nav ">
+                <li><a href="index.html#hikayemiz">Hikâyemiz</a></li>
+                <li><a href="index.html#nedediler">Ne Dediler?</a></li>
+                <li><a href="index.html#etkinlikler">Etkinlikler</a></li>
+                <li><a href="index.html#program">Program</a></li>
+                <li><a href="index.html#isortaklarimiz">İş Ortaklarımız</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+<!-- <div class="container"> -->
+    <!-- row 1 -->
+<!--     <header class="row">
+        <div class="col-lg-6 col-sm-5">
+            <a href="#"><img src="img/logoy.png" alt="Wisdom Pets. click for home.">LOGO</a>
+        </div>
+        <div class="col-lg-6  col-sm-7">
+        </div>
+    </header> -->
+
+<!-- </div> -->
+
+
+
+
+
+<div id="iletisim" class="anchor"></div>
+<div class="container-fluid -paddingFix  -list">
+  <div class="container">
+
+    <div class="row">
+      <h2 class="col-md-11 col-xs-12 col-md-offset-1">Teşekkürler!</h2>
+        <div class="col-md-4 col-xs-12 col-md-offset-1">
+            <p>Mail listemize kaydolduğunuz ve YouStartup'a ilginiz için teşekkürler...<br>
+            Artık listemizdesiniz ve en son gelişmeler, haberler, bağlantılar ve etkinlik davetleri  sizinle!</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ekko-lightbox.js"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    $(window).load(function(){
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $(this).attr('href') ).offset().top
+          }, 500);
+          return false;
+      });
+    });
+  </script>
+
+</body>
+</html>

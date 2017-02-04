@@ -15,14 +15,6 @@
 		"oAP": "\/2017denizli\/form.html",
 		"oF": 0
 		},
-	"\/2017denizli\/hero.jpg": {
-		"ft": 16384,
-		"iS": 102834,
-		"oA": 0,
-		"oAP": "\/2017denizli\/hero.jpg",
-		"oF": 0,
-		"opt": 1
-		},
 	"\/2017denizli\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
@@ -126,6 +118,12 @@
 		"oAP": "\/2017denizli\/participants\/okan-sencan.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/2017denizli\/thanks.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/2017denizli\/thanks.html",
+		"oF": 0
 		},
 	"\/2017denizli\/yatirimci-sunumu-template-turkce.zip": {
 		"ft": 8192,
@@ -318,6 +316,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/fonts\/Icon\r",
+		"oF": 0
+		},
+	"\/form.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/form.html",
 		"oF": 0
 		},
 	"\/Icon\r": {
@@ -650,6 +654,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/hero2017Denizli.jpg": {
+		"ft": 16384,
+		"iS": 102834,
+		"oA": 0,
+		"oAP": "\/img\/hero2017Denizli.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
@@ -742,6 +754,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/index-main.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index-main.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -799,6 +817,98 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/organization\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/organization\/Icon\r",
+		"oF": 0
+		},
+	"\/organization\/pau.png": {
+		"ft": 32768,
+		"iS": 15515,
+		"oA": 0,
+		"oAP": "\/organization\/pau.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/teknokent.png": {
+		"ft": 32768,
+		"iS": 12850,
+		"oA": 0,
+		"oAP": "\/organization\/teknokent.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/youstartup.png": {
+		"ft": 32768,
+		"iS": 3538,
+		"oA": 0,
+		"oAP": "\/organization\/youstartup.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/ayse-inal.png": {
+		"ft": 32768,
+		"iS": 30941,
+		"oA": 0,
+		"oAP": "\/participants\/ayse-inal.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/basar-kaya.png": {
+		"ft": 32768,
+		"iS": 31255,
+		"oA": 0,
+		"oAP": "\/participants\/basar-kaya.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/ekim-nazim-kaya.png": {
+		"ft": 32768,
+		"iS": 37568,
+		"oA": 0,
+		"oAP": "\/participants\/ekim-nazim-kaya.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/esranur-kaygin.png": {
+		"ft": 32768,
+		"iS": 37486,
+		"oA": 0,
+		"oAP": "\/participants\/esranur-kaygin.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/fatih-guner.png": {
+		"ft": 32768,
+		"iS": 27315,
+		"oA": 0,
+		"oAP": "\/participants\/fatih-guner.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/participants\/Icon\r",
+		"oF": 0
+		},
+	"\/participants\/mumtaz-hacipasaoglu.png": {
+		"ft": 32768,
+		"iS": 30776,
+		"oA": 0,
+		"oAP": "\/participants\/mumtaz-hacipasaoglu.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/participants\/okan-sencan.png": {
+		"ft": 32768,
+		"iS": 33129,
+		"oA": 0,
+		"oAP": "\/participants\/okan-sencan.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/prepros.cfg": {
 		"ft": 8192,
 		"oA": 2,
@@ -821,6 +931,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/thanks.html",
+		"oF": 0
+		},
+	"\/yatirimci-sunumu-template-turkce.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/yatirimci-sunumu-template-turkce.zip",
+		"oF": 0
+		},
+	"\/youstartup\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/youstartup\/Icon\r",
+		"oF": 0
+		},
+	"\/youstartup\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/youstartup\/index.html",
 		"oF": 0
 		}
 	},
