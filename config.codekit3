@@ -817,6 +817,14 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/organization\/agirisim.png": {
+		"ft": 32768,
+		"iS": 2965,
+		"oA": 0,
+		"oAP": "\/organization\/agirisim.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/organization\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
