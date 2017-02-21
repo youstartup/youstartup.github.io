@@ -7,7 +7,7 @@
 		"uuidString": "F1302BEF-A8CC-43C4-9BDA-792266B57121"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/2017denizli\/form.html": {
 		"ft": 8192,
@@ -903,6 +903,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/participants\/gunce-onur.png": {
+		"ft": 32768,
+		"iS": 37310,
+		"oA": 0,
+		"oAP": "\/participants\/gunce-onur.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/participants\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
@@ -1624,6 +1632,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -2163,6 +2175,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
