@@ -122,6 +122,10 @@ article{
 // .-about, .-testimonials, .-timetable, .-list, .-events{ overflow: hidden; }
 
 .-about{
+  // background-color: #000;
+  background: url(/img/bgLogoGhost.png) left top no-repeat;
+}
+.-aboutDenizli{
   background-color: #000;
   // background: url(/img/vector-bg-3.jpg) left top no-repeat;
 }
@@ -138,7 +142,7 @@ article{
 //   z-index: 5;
 // }
 
-.-timetableDenizli{
+.-timetableDenizli, .-timetable{
     // border-left: 1px solid #ddd;
     // padding:0px;
   li{
@@ -202,32 +206,32 @@ article{
   //   font-size: 14px;
   // }
 }
-.-timetable{
-  li{
-    padding:0px 0px 40px 0px;
-    box-sizing:border-box;
-  }
-  li:nth-child(even){
-    border-left: 1px solid #ddd;
-  }
-  li:nth-child(odd){
-    padding-right: 30px;
-  }
-  li:nth-child(2):before{
-    color: #4caf50 !important;
-  }
-  li:nth-child(even):before{
-    font-family: fontAwesome;
-    content: "\f111";
-    position: relative;
-    color: #ccc;
-    float:left;
-    padding-right:20px;
-    // margin-bottom: 30px;
-    margin-left: -6px;
-    font-size: 14px;
-  }
-}
+// .-timetable{
+//   li{
+//     padding:0px 0px 40px 0px;
+//     box-sizing:border-box;
+//   }
+//   li:nth-child(even){
+//     border-left: 1px solid #ddd;
+//   }
+//   li:nth-child(odd){
+//     padding-right: 30px;
+//   }
+//   li:nth-child(2):before{
+//     color: #4caf50 !important;
+//   }
+//   li:nth-child(even):before{
+//     font-family: fontAwesome;
+//     content: "\f111";
+//     position: relative;
+//     color: #ccc;
+//     float:left;
+//     padding-right:20px;
+//     // margin-bottom: 30px;
+//     margin-left: -6px;
+//     font-size: 14px;
+//   }
+// }
 
 .-testimonials{
   twitterwidget{
@@ -333,16 +337,16 @@ article{
   background-color: white;
 }
 .jumbotron{
-  @include breakpoint(xs) { min-height: 250px; background-position: -150px top; }
-  @include breakpoint(sm) { min-height: 400px; background-position: left center; }
+  // @include breakpoint(xs) { min-height: 250px; background-position: -150px top; }
+  // @include breakpoint(sm) { min-height: 400px; background-position: left center; }
   padding:0px;
   margin-bottom:0px;
   // min-height: 250px;
-  background-image: url(/img/hero.jpg);
+  background-image: url(/img/hero-new.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
+  height:100%;width:100%;
   background-color: white;
 }
 .-grayBg{
@@ -361,7 +365,7 @@ article{
 footer{
     .btn{
       margin:6px;
-      background-color: black;
+      background-color: transparent;
       color: white;
     }
   a{

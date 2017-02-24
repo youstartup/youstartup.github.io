@@ -85,26 +85,29 @@ article {
   padding: 0px 10px; }
 
 .-about {
+  background: url(/img/bgLogoGhost.png) left top no-repeat; }
+
+.-aboutDenizli {
   background-color: #000; }
 
-.-timetableDenizli li {
+.-timetableDenizli li, .-timetable li {
   font-size: 20px;
   box-sizing: border-box;
   position: relative;
   float: left;
   width: 100%; }
 
-.-timetableDenizli .-time {
+.-timetableDenizli .-time, .-timetable .-time {
   border-left: 1px solid #ddd;
   padding: 30px 0px 0px 50px;
   font-size: 14px;
   color: #ff821e; }
 
-.-timetableDenizli .-content {
+.-timetableDenizli .-content, .-timetable .-content {
   padding: 0px 0px 30px 50px;
   border-left: 1px solid #ddd;
   border-bottom: 1px solid #ddd; }
-  .-timetableDenizli .-content i {
+  .-timetableDenizli .-content i, .-timetable .-content i {
     position: absolute;
     float: left;
     width: 42px;
@@ -118,29 +121,6 @@ article {
     background-color: #fff;
     border: 1px solid #ff821e;
     color: #ff821e; }
-
-.-timetable li {
-  padding: 0px 0px 40px 0px;
-  box-sizing: border-box; }
-
-.-timetable li:nth-child(even) {
-  border-left: 1px solid #ddd; }
-
-.-timetable li:nth-child(odd) {
-  padding-right: 30px; }
-
-.-timetable li:nth-child(2):before {
-  color: #4caf50 !important; }
-
-.-timetable li:nth-child(even):before {
-  font-family: fontAwesome;
-  content: "\f111";
-  position: relative;
-  color: #ccc;
-  float: left;
-  padding-right: 20px;
-  margin-left: -6px;
-  font-size: 14px; }
 
 .-testimonials twitterwidget {
   margin: 0 auto; }
@@ -192,20 +172,13 @@ article {
 .jumbotron {
   padding: 0px;
   margin-bottom: 0px;
-  background-image: url(/img/hero.jpg);
+  background-image: url(/img/hero-new.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
+  height: 100%;
+  width: 100%;
   background-color: white; }
-  @media (max-width: 767px) {
-    .jumbotron {
-      min-height: 250px;
-      background-position: -150px top; } }
-  @media (min-width: 768px) {
-    .jumbotron {
-      min-height: 400px;
-      background-position: left center; } }
 
 .-grayBg {
   background-color: #eee; }
@@ -228,7 +201,7 @@ article {
 
 footer .btn {
   margin: 6px;
-  background-color: black;
+  background-color: transparent;
   color: white; }
 
 footer a {
