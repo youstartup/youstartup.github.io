@@ -341,7 +341,7 @@ footer a:hover {
   transform: translateY(-50%); }
   @media (max-width: 767px) {
     .countdown-container {
-      top: 70%;
+      top: 65%;
       margin: 0px;
       padding: 0px;
       width: 100%; } }
