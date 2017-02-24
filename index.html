@@ -8,44 +8,22 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
-    <link href="/css/ekko-lightbox.css" rel="stylesheet">
+    <!-- <link href="/css/ekko-lightbox.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,600&amp;subset=latin-ext" rel="stylesheet">
-    <script src="/js/respond.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script src="/js/respond.js"></script> -->
     <script src="/js/respond.js"></script>
     <script src="https://use.fontawesome.com/049586c38c.js"></script>
+
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+    <link rel="stylesheet" href="css/TimeCircles.css" />
+
 </head>
 
 <body>
 
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-    <div class="container">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand"><img src="/img/logoColorIcon.png"></div>
-        </div>
-
-        <div class="collapse navbar-collapse navbar-right" id="collapse">
-            <ul class="nav navbar-nav ">
-                <!-- <li><a href="http://www.youstartup.co">Ana sayfa</a></li> -->
-                <li><a href="#pitchdeck">Başvuru</a></li>
-                <li><a href="#katilimcilar">Katılımcılar</a></li>
-                <li><a href="#program">Program</a></li>
-                <li><a href="#iletisim">Kaydol</a></li>
-                <li><a href="#organizasyon">Organizasyon</a></li>
-                <li><a href="http://youstartup.github.io/youstartup">Hikayemiz</a></li>
-            </ul>
-        </div>
-    </div>
-
-</nav>
 
 
 <!-- <div class="container"> -->
@@ -61,15 +39,53 @@
 <!-- </div> -->
 
 <div class="jumbotronDenizli">
+<nav class="navbar navbar-default" role="navigation">
 
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand"><img src="/img/logoWhiteXSmall.png"></div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="collapse">
+            <ul class="nav navbar-nav ">
+                <!-- <li><a href="http://www.youstartup.co">Ana sayfa</a></li> -->
+                <!-- <li><a href="#pitchdeck">Başvuru</a></li> -->
+                <li><a href="#katilimcilar">Katılımcılar</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#iletisim">Kaydol</a></li>
+                <li><a href="#organizasyon">Organizasyon</a></li>
+                <li><a href="http://youstartup.github.io/youstartup">Hikayemiz</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<div class="container -white">
+
+    <!-- Display the countdown timer in an element -->
+    <!-- <div class="title"><span style="font-weight: 300;">4 Mart</span> <span style="font-weight: 400;">Pamukkale</span> <span style="font-weight: 600;">Teknokent</span></div> -->
+    <div id="timer"></div>
+    <!-- <div id="DateCountdown" data-date="2017-03-04 12:00:00" style="width: 500px; height: 125px; padding: 0px; box-sizing: border-box; background-color: #E0E8EF"></div> -->
+
+  </div>
+  <!-- <div class="timex"></div> -->
   <!-- <img src="/img/hero-1600.jpg" class="img-responsive"> -->
 
 </div>
 
 <div class="container-fluid -paddingFix -about">
-  <div class="container -ptA">
-    <article class="row">
-      <div class="col-md-7 col-xs-12 col-md-offset-1">
+  <div class="container">
+    <article class="row -white">
+      <div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
+        <img src="/img/logoColorIcon.png">
         <h2>Ege'li girişimciler, startuplarını hızlandıracak destekler için yarışıyor.</h2>
         <h4>Ekosistemin başarılı yatırımcı ve mentorlerinin yer aldığı jüriye yapacakları 4 dakikalık sunumun ardından yapılacak değerlendirmede 3 girişim destekleri almaya hak kazanacak.</h4>
       </div>
@@ -77,22 +93,17 @@
   </div>
 </div>
 
-<div id="pitchdeck" class="anchor"></div>
+<!-- <div id="pitchdeck" class="anchor"></div>
 <div class="container-fluid -paddingFix -gradientBg -list">
   <div class="container">
 
     <div class="row">
-      <h2 class="col-md-11 col-xs-12 col-md-offset-1">Başvuru</h2>
-        <div class="col-md-5 col-xs-12 col-md-offset-1">
-          <!-- <p> -->
-<!--           <a class="btn btn-default" role="button" target="_blank" href="yatirimci-sunumu-template-turkce.zip">Örnek Pitch Deck
-          </a> -->
-          <!-- </p> -->
+      <h2 class="col-md-12">Başvuru</h2>
+        <div class="col-md-5 col-xs-12">
             <h4>Örnekteki sunum ile katılım formunu doldurarak siz de YouStartup Denizli'de yer alın.</h4>
-          <!-- <h3><a href="mailto:hi@youstartup.co">hi@youstartup.co</a></h3> -->
           <p style="position: relative; float:left; width:100%;">
             <a class="btn btn-lg -formButton col-xs-12 col-sm-6" href="form.html" role="button" style="margin-bottom:10px;">Katılım Formu</a>
-            <a class="btn btn-lg col-xs-12 col-sm-5 col-md-offset-1" role="button" target="_blank" href="yatirimci-sunumu-template-turkce.zip" style="font-size: 12px; line-height: 24px;">Örnek Pitch Deck</a>
+            <a class="btn btn-lg col-xs-12 col-sm-5" role="button" target="_blank" href="yatirimci-sunumu-template-turkce.zip" style="font-size: 12px; line-height: 24px;">Örnek Pitch Deck</a>
           </p>
           <p>
             <small>Son Katılım Tarihi 20.02.2017</small>
@@ -100,17 +111,17 @@
         </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div id="katilimcilar" class="anchor"></div>
 <div class="container-fluid -paddingFix ">
   <div class="container">
     <div class="row">
-      <h2 class="col-md-11 col-xs-12 col-md-offset-1">Katılımcılar</h2>
+      <h2 class="col-md-12 text-center" style="margin:0px; padding: 20px 0px;">Katılımcılar</h2>
 
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
         <p><img src="participants/ayse-inal.png" alt="ayse-inal" class="img-responsive center-block"></p>
-        <p class="text-center">Ayşe İnal<br>Chief Investment Officer<br>SmartupNetwork</p>
+        <p class="text-center"><b>Ayşe İnal</b><br>Chief Investment Officer<br>SmartupNetwork</p>
         <p class="text-center">
           <a href="https://twitter.com/ayseinal"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://tr.linkedin.com/in/ayse-inal-8464b710"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -118,7 +129,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
         <p><img src="participants/esranur-kaygin.png" alt="esranur-kaygin" class="img-responsiv center-block"></p>
-        <p class="text-center">Esranur Kaygın<br>Venture Capitalist<br>Sankonline</p>
+        <p class="text-center"><b>Esranur Kaygın</b><br>Venture Capitalist<br>Sankonline</p>
         <p class="text-center">
           <a href="https://twitter.com/esranurkaygin"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/esranur-kaygin-5b12768"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -126,7 +137,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
           <p><img src="participants/gunce-onur.png" alt="okan-sencan" class="img-responsive center-block"></p>
-          <p class="text-center">Günce Önür<br>Investor Relations Executive<br>Keiretsu Forum</p>
+          <p class="text-center"><b>Günce Önür</b><br>Investor Relations Executive<br>Keiretsu Forum</p>
           <p class="text-center">
             <a href="https://twitter.com/gunce_o"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://tr.linkedin.com/in/gunceonur"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -135,7 +146,7 @@
 
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
         <p><img src="participants/fatih-guner.png" alt="fatih-guner" class="img-responsive center-block"></p>
-        <p class="text-center">Fatih Güner<br>Founder<br>Beyaz Yaka Kitap Kulübü</p>
+        <p class="text-center"><b>Fatih Güner</b><br>Founder<br>Beyaz Yaka Kitap Kulübü</p>
         <p class="text-center">
           <a href="https://twitter.com/fatihguner"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://tr.linkedin.com/in/fatihguner"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -143,7 +154,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
         <p><img src="participants/ekim-nazim-kaya.png" alt="ekim-nazim-kaya" class="img-responsive center-block"></p>
-        <p class="text-center">Ekim Nazım Kaya<br>Founder<br>Botego</p>
+        <p class="text-center"><b>Ekim Nazım Kaya</b><br>Founder<br>Botego</p>
         <p class="text-center">
           <a href="https://twitter.com/ekimnazimkaya"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/ekimkaya"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -152,7 +163,7 @@
 
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
           <p><img src="participants/basar-kaya.png" alt="basar-kaya" class="img-responsive center-block"></p>
-          <p class="text-center">Başar Kaya<br>Senior Expert<br>Sabancı Uni. SUCool</p>
+          <p class="text-center"><b>Başar Kaya</b><br>Senior Expert<br>Sabancı Uni. SUCool</p>
           <p class="text-center">
             <a href="https://twitter.com/basaarkaya"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/başar-kaya-96b99754"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -160,7 +171,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
           <p><img src="participants/mumtaz-hacipasaoglu.png" alt="mumtaz-hacipasaoglu" class="img-responsive center-block"></p>
-          <p class="text-center">Mümtaz Hacıpaşaoğlu<br>Co-Founder<br>StartupHukuku</p>
+          <p class="text-center"><b>Mümtaz Hacıpaşaoğlu</b><br>Co-Founder<br>StartupHukuku</p>
           <p class="text-center">
             <a href="https://twitter.com/mumtazhcpsglu"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/mumtazhacipasaoglu"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -168,7 +179,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 -participant">
           <p><img src="participants/okan-sencan.png" alt="okan-sencan" class="img-responsive center-block"></p>
-          <p class="text-center">Okan Şencan<br>Co-Founder<br>StartupHukuku</p>
+          <p class="text-center"><b>Okan Şencan</b><br>Co-Founder<br>StartupHukuku</p>
           <p class="text-center">
             <!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
             <a href="https://www.linkedin.com/in/okan-%25C5%259Fencan-1232293a"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -178,85 +189,41 @@
   </div>
 </div>
 
-
-
-<!-- <div class="container-fluid -paddingFix -gradientBg -events">
-  <div class="container">
-
-    <div class="row">
-    <h2 class="col-md-11 col-xs-12 col-md-offset-1">Gaziantep 2016</h2>
-
-     <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 2" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/2255EE"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 3" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 4" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 5" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/2255EE"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 6" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 8" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/777"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 9" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 10" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/EEE"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 11" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 12" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/DDD"></a></div>
-      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 13" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
-
-
-    </div>
-  </div>
-</div> -->
-<!--
-<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-    <button class="close" type="button" data-dismiss="modal">×</button>
-    <h3 class="modal-title">Heading</h3>
-  </div>
-  <div class="modal-body">
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-default" data-dismiss="modal">Close</button>
-  </div>
-   </div>
-  </div>
-</div>
- -->
-
 <div id="program" class="anchor"></div>
 <div class="container-fluid">
   <div class="container">
     <div class="row">
-    <h2 class="col-md-11 col-xs-12 col-md-offset-1">Program</h2>
-    <ul class="container -timetableDenizli">
-      <li class="col-xs-6 col-sm-6 text-right">12:00 - 13:00</li>
-      <li class="col-xs-6 col-sm-6">Açılış - Networking</li>
+    <h2 class="col-md-12 text-center -border" style="margin:0px; padding: 20px 0px;">Program</h2>
+    <ul class="container col-md-6 col-md-offset-3 -timetableDenizli">
+      <li class="-time">12:00 - 13:00</li>
+      <li class="-content"><i class="fa fa-play" aria-hidden="true"></i> Açılış - Networking</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">13:00 - 13:15</li>
-      <li class="col-xs-6 col-sm-6">Sunum</li>
+      <li class="-time">13:00 - 13:15</li>
+      <li class="-content"><i class="fa fa-comment" aria-hidden="true"></i>Sunum</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">13:15 - 13:30</li>
-      <li class="col-xs-6 col-sm-6">Sunum</li>
+      <li class="-time">13:15 - 13:30</li>
+      <li class="-content"><i class="fa fa-comment" aria-hidden="true"></i>Sunum</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">13:30 - 14:00</li>
-      <li class="col-xs-6 col-sm-6">Panel</li>
+      <li class="-time">13:30 - 14:00</li>
+      <li class="-content"><i class="fa fa-comments" aria-hidden="true"></i> Panel</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">14:00 - 14:15</li>
-      <li class="col-xs-6 col-sm-6">Sunum</li>
+      <li class="-time">14:00 - 14:15</li>
+      <li class="-content"><i class="fa fa-comment" aria-hidden="true"></i>Sunum</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">14:15 - 14:30</li>
-      <li class="col-xs-6 col-sm-6">Kahve Molası</li>
+      <li class="-time">14:15 - 14:30</li>
+      <li class="-content"><i class="fa fa-coffee" aria-hidden="true"></i> Kahve Molası</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">14:30 - 16:00</li>
-      <li class="col-xs-6 col-sm-6">Pitching Challenge</li>
+      <li class="-time">14:30 - 16:00</li>
+      <li class="-content"><i class="fa fa-star" aria-hidden="true"></i>Pitching Challenge</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">16:00 - 16:15</li>
-      <li class="col-xs-6 col-sm-6">Kahve Molası</li>
+      <li class="-time">16:00 - 16:15</li>
+      <li class="-content"><i class="fa fa-coffee" aria-hidden="true"></i> Kahve Molası</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">16:15 - 16:30</li>
-      <li class="col-xs-6 col-sm-6">Elevator Pitching</li>
+      <li class="-time">16:15 - 16:30</li>
+      <li class="-content"><i class="fa fa-bolt" aria-hidden="true"></i> Elevator Pitching</li>
 
-      <li class="col-xs-6 col-sm-6 text-right">16:30 – 17:00</li>
-      <li class="col-xs-6 col-sm-6">Ödül Töreni - Kapanış</li>
+      <li class="-time">16:30 – 17:00</li>
+      <li class="-content"><i class="fa fa-trophy" aria-hidden="true"></i> Ödül Töreni - Kapanış</li>
 
 
     </ul>
@@ -265,12 +232,12 @@
 </div>
 
 <div id="iletisim" class="anchor"></div>
-<div class="container-fluid -paddingFix -gradientBg -list">
+<div class="container-fluid -paddingFix -list" style="background-image: url(/img/vector-bg-2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
   <div class="container">
 
     <div class="row">
-      <h2 class="col-md-11 col-xs-12 col-md-offset-1">Kaydol</h2>
-        <div class="col-md-4 col-xs-12 col-md-offset-1">
+      <h2 class="col-md-12 text-center -white">Kaydol</h2>
+        <div class="col-md-4 col-md-offset-4 col-xs-12 text-center -white" style="font-size: 18px;">
             <p>En son gelişmeler, haberler, bağlantılar ve etkinlik davetleri için mail listemize kaydolun!</p>
             <form action="https://formspree.io/erdalgokhangunes@gmail.com" method="POST">
                 <div class="form-group">
@@ -289,10 +256,10 @@
 </div>
 
 <div id="organizasyon" class="anchor"></div>
-<div class="container-fluid -paddingFix ">
+<div class="container-fluid -paddingFixTop ">
   <div class="container">
     <div class="row">
-      <h2 class="col-md-11 col-xs-12 col-md-offset-1">Organizasyon</h2>
+      <h2 class="col-md-12 text-center -border" style="margin:0px; padding: 20px 0px;">Organizasyon</h2>
       <div class="col-md-1 col-sm-6 col-xs-12">&nbsp;</div>
       <div class="col-md-2 col-sm-6 col-xs-12">
         <img src="organization/youstartup.png" alt="" class="img-responsive center-block">
@@ -314,6 +281,59 @@
   </div>
 </div>
 
+<div class="container-fluid -paddingFixTop ">
+  <div class="container">
+    <div class="row">
+      <h2 class="col-md-12 text-center -border" style="margin:0px; padding: 20px 0px;">Sponsorlar</h2>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <img src="organization/radore.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <img src="organization/webtunes.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <img src="organization/sendloop.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <img src="organization/aramamotoru.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img src="organization/netinternet.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img src="organization/projemetre.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img src="organization/startuphukuku.png" alt="" class="img-responsive center-block">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid -paddingFix ">
+  <div class="container">
+    <div class="row">
+      <h2 class="col-md-12 text-center -border" style="margin:0px; padding: 20px 0px;">Destekleyenler</h2>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <img src="organization/dto.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <img src="organization/dggk.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img src="organization/keiretsu.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img src="organization/sankonline.png" alt="" class="img-responsive center-block">
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <img src="organization/smartup.png" alt="" class="img-responsive center-block">
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="overlay" onClick="style.pointerEvents='none'"></div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6180.544749146947!2d29.08740794342075!3d37.738324345858175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c73f28008f7c8d%3A0x66d205fe1aca0433!2sPamukkale+Teknokent+Y%C3%B6netici+A.%C5%9E%3A!5e0!3m2!1sen!2s!4v1486074318885" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -321,8 +341,10 @@
   <div class="container">
 
     <div class="row">
-    <h2 class="col-md-11 col-xs-12 col-md-offset-1">İletişim</h2>
-      <div class="col-md-6 col-xs-12 col-md-offset-1">
+
+      <div class="col-md-6 col-xs-12">
+        <img src="/img/footer/teb.png" class="img-responsive">
+        <br><br>
         <a href="https://www.facebook.com/YouStartupCo">
           <i class="fa fa-facebook-official" aria-hidden="true"></i>
         </a>
@@ -341,9 +363,8 @@
         </a> -->
         <br><br>
         2017 YouStartup
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <img src="/img/footer/teb.png" class="img-responsive pull-right">
+        <br><br>
+
       </div>
     </div>
   </div>
@@ -380,6 +401,71 @@
       });
     });
   </script>
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("mar 4, 2017 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer").innerHTML = "<div class='day'>" + days + "<p>gün</p></div><div class='hour'>" + hours + "<p>saat</p></div><div class='min'>"
+  + minutes + "<p>dakika</p></div><div class='sec'>" + seconds + "<p>saniye</p></div>";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<!-- <script>
+$(".timex").TimeCircles();
+</script> -->
+<!-- <script>
+    $("#DateCountdown").TimeCircles();
+    $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } }});
+    $("#PageOpenTimer").TimeCircles();
+
+    var updateTime = function(){
+        var date = $("#date").val();
+        var time = $("#time").val();
+        var datetime = date + ' ' + time + ':00';
+        $("#DateCountdown").data('date', datetime).TimeCircles().start();
+    }
+    $("#date").change(updateTime).keyup(updateTime);
+    $("#time").change(updateTime).keyup(updateTime);
+
+    // Start and stop are methods applied on the public TimeCircles instance
+    $(".startTimer").click(function() {
+        $("#CountDownTimer").TimeCircles().start();
+    });
+    $(".stopTimer").click(function() {
+        $("#CountDownTimer").TimeCircles().stop();
+    });
+
+    // Fade in and fade out are examples of how chaining can be done with TimeCircles
+    $(".fadeIn").click(function() {
+        $("#PageOpenTimer").fadeIn();
+    });
+    $(".fadeOut").click(function() {
+        $("#PageOpenTimer").fadeOut();
+    });
+
+</script> -->
 
 </body>
 </html>

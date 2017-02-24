@@ -234,6 +234,16 @@
 		"oAP": "\/css\/Icon\r",
 		"oF": 0
 		},
+	"\/css\/TimeCircles.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/TimeCircles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/favicon\/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 1427,
@@ -646,6 +656,30 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/hero-pamukkale-2.jpg": {
+		"ft": 16384,
+		"iS": 265973,
+		"oA": 0,
+		"oAP": "\/img\/hero-pamukkale-2.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/hero-pamukkale-text.jpg": {
+		"ft": 16384,
+		"iS": 264363,
+		"oA": 0,
+		"oAP": "\/img\/hero-pamukkale-text.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/hero-pamukkale.jpg": {
+		"ft": 16384,
+		"iS": 221378,
+		"oA": 0,
+		"oAP": "\/img\/hero-pamukkale.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/hero.jpg": {
 		"ft": 16384,
 		"iS": 117987,
@@ -716,6 +750,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/logoWhiteSmall.png": {
+		"ft": 32768,
+		"iS": 1355,
+		"oA": 0,
+		"oAP": "\/img\/logoWhiteSmall.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/logoWhiteXSmall.png": {
+		"ft": 32768,
+		"iS": 1084,
+		"oA": 0,
+		"oAP": "\/img\/logoWhiteXSmall.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/partners\/fi.png": {
 		"ft": 32768,
 		"iS": 5543,
@@ -753,6 +803,38 @@
 		"oAP": "\/img\/partners\/teb.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/img\/vector-bg-2.jpg": {
+		"ft": 16384,
+		"iS": 44228,
+		"oA": 0,
+		"oAP": "\/img\/vector-bg-2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/vector-bg-3.jpg": {
+		"ft": 16384,
+		"iS": 43390,
+		"oA": 0,
+		"oAP": "\/img\/vector-bg-3.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/vector-bg.jpg": {
+		"ft": 16384,
+		"iS": 77738,
+		"oA": 0,
+		"oAP": "\/img\/vector-bg.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/vector-footer.jpg": {
+		"ft": 16384,
+		"iS": 52804,
+		"oA": 0,
+		"oAP": "\/img\/vector-footer.jpg",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/index-main.html": {
 		"ft": 8192,
@@ -817,11 +899,44 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/TimeCircles.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/TimeCircles-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/organization\/agirisim.png": {
 		"ft": 32768,
 		"iS": 2965,
 		"oA": 0,
 		"oAP": "\/organization\/agirisim.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/aramamotoru.png": {
+		"ft": 32768,
+		"iS": 3024,
+		"oA": 0,
+		"oAP": "\/organization\/aramamotoru.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/dggk.png": {
+		"ft": 32768,
+		"iS": 16057,
+		"oA": 0,
+		"oAP": "\/organization\/dggk.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/dto.png": {
+		"ft": 32768,
+		"iS": 25983,
+		"oA": 0,
+		"oAP": "\/organization\/dto.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -831,11 +946,75 @@
 		"oAP": "\/organization\/Icon\r",
 		"oF": 0
 		},
+	"\/organization\/keiretsu.png": {
+		"ft": 32768,
+		"iS": 6490,
+		"oA": 0,
+		"oAP": "\/organization\/keiretsu.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/netinternet.png": {
+		"ft": 32768,
+		"iS": 5317,
+		"oA": 0,
+		"oAP": "\/organization\/netinternet.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/organization\/pau.png": {
 		"ft": 32768,
 		"iS": 15515,
 		"oA": 0,
 		"oAP": "\/organization\/pau.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/projemetre.png": {
+		"ft": 32768,
+		"iS": 5451,
+		"oA": 0,
+		"oAP": "\/organization\/projemetre.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/radore.png": {
+		"ft": 32768,
+		"iS": 7169,
+		"oA": 0,
+		"oAP": "\/organization\/radore.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/sankonline.png": {
+		"ft": 32768,
+		"iS": 3341,
+		"oA": 0,
+		"oAP": "\/organization\/sankonline.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/sendloop.png": {
+		"ft": 32768,
+		"iS": 8838,
+		"oA": 0,
+		"oAP": "\/organization\/sendloop.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/smartup.png": {
+		"ft": 32768,
+		"iS": 8165,
+		"oA": 0,
+		"oAP": "\/organization\/smartup.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/startuphukuku.png": {
+		"ft": 32768,
+		"iS": 2810,
+		"oA": 0,
+		"oAP": "\/organization\/startuphukuku.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -852,6 +1031,14 @@
 		"iS": 10728,
 		"oA": 0,
 		"oAP": "\/organization\/tto.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/organization\/webtunes.png": {
+		"ft": 32768,
+		"iS": 2890,
+		"oA": 0,
+		"oAP": "\/organization\/webtunes.png",
 		"oF": 0,
 		"opt": 0
 		},

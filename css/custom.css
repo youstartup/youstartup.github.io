@@ -1,6 +1,12 @@
 /*custom css file*/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+html {
+  height: 100%; }
+
 body {
-  padding-top: 50px; }
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif; }
 
 ul, li {
   padding: 0px;
@@ -8,8 +14,9 @@ ul, li {
   list-style: none; }
 
 footer {
-  background-color: black;
-  color: white; }
+  color: white;
+  background: url(/img/vector-footer.jpg) bottom right no-repeat;
+  background-size: cover; }
 
 .modal-header {
   display: none; }
@@ -25,6 +32,12 @@ footer {
       padding-top: 60px;
       padding-bottom: 20px; } }
 
+.-paddingFixTop {
+  padding-top: 100px; }
+  @media (max-width: 767px) {
+    .-paddingFixTop {
+      padding-top: 60px; } }
+
 .navbar-toggle {
   border-color: transparent !important; }
 
@@ -34,36 +47,77 @@ footer {
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.9); }
 
-nav li a {
-  padding-right: 5px;
-  padding-left: 5px; }
+nav {
+  background: transparent !important;
+  border: 0px !important; }
+  nav li a {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white !important; }
+
+article {
+  position: relative;
+  float: left; }
+
+.-titleText {
+  padding-top: 100px; }
+
+.title {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 50px; }
+  @media (max-width: 767px) {
+    .title {
+      padding-top: 0px;
+      font-size: 24px; } }
+  .title span {
+    float: none; }
+    @media (max-width: 767px) {
+      .title span {
+        width: 100%;
+        float: left; } }
 
 .navbar-brand {
   margin: 0px;
   padding: 0px 10px; }
 
 .-about {
-  background: url(/img/bgLogoGhost.png) left top no-repeat; }
+  background-color: #000; }
 
 .-timetableDenizli li {
-  padding: 0px 0px 40px 0px;
-  box-sizing: border-box; }
-
-.-timetableDenizli li:nth-child(even) {
-  border-left: 1px solid #ddd; }
-
-.-timetableDenizli li:nth-child(odd) {
-  padding-right: 30px; }
-
-.-timetableDenizli li:nth-child(even):before {
-  font-family: fontAwesome;
-  content: "\f111";
+  font-size: 20px;
+  box-sizing: border-box;
   position: relative;
-  color: #ccc;
   float: left;
-  padding-right: 20px;
-  margin-left: -6px;
-  font-size: 14px; }
+  width: 100%; }
+
+.-timetableDenizli .-time {
+  border-left: 1px solid #ddd;
+  padding: 30px 0px 0px 50px;
+  font-size: 14px;
+  color: #ff821e; }
+
+.-timetableDenizli .-content {
+  padding: 0px 0px 30px 50px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+  .-timetableDenizli .-content i {
+    position: absolute;
+    float: left;
+    width: 42px;
+    height: 42px;
+    line-height: 22px;
+    text-align: center;
+    left: -20.5px;
+    top: -7.5px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #ff821e;
+    color: #ff821e; }
 
 .-timetable li {
   padding: 0px 0px 40px 0px;
@@ -127,15 +181,13 @@ nav li a {
 .jumbotronDenizli {
   padding: 0px;
   margin-bottom: 0px;
-  background-image: url(/img/hero2017Denizli.jpg);
+  background-image: url(/img/hero-pamukkale-text.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 100%;
+  width: 100%;
   background-color: white; }
-  @media (max-width: 767px) {
-    .jumbotronDenizli {
-      height: 250px; } }
 
 .jumbotron {
   padding: 0px;
@@ -204,7 +256,12 @@ footer a:hover {
 .-participant {
   margin: 25px 0px; }
   .-participant i {
-    font-size: 20px; }
+    font-size: 16px; }
+  .-participant b {
+    font-weight: bold;
+    color: #ff008c; }
+  .-participant a {
+    color: #ff008c; }
 
 .-formButton {
   background-color: white !important;
@@ -215,3 +272,63 @@ footer a:hover {
 
 .-ptA {
   padding-top: 150px; }
+
+.-ptB {
+  padding-top: 100px; }
+
+.-ptC {
+  padding-top: 50px; }
+
+.-border {
+  border-bottom: 1px solid #eee; }
+
+.-marginZero {
+  margin: 0px; }
+
+.-white {
+  color: white; }
+
+.form-group input {
+  font-size: 18px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; }
+
+#timer {
+  position: relative;
+  display: table;
+  font-family: 'Roboto Mono', monospace;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40%;
+  text-align: center;
+  font-size: 66px;
+  font-weight: 200;
+  padding-top: 20px; }
+  @media (max-width: 767px) {
+    #timer {
+      width: 300px;
+      font-size: 46px;
+      padding-top: 100px; } }
+  #timer .sec {
+    border: 0px; }
+  #timer div {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.5); }
+    @media (max-width: 767px) {
+      #timer div {
+        width: 70px; } }
+    #timer div p {
+      position: relative;
+      float: left;
+      top: -22.5px;
+      width: 100%;
+      height: auto;
+      line-height: 20px;
+      text-align: center;
+      font-size: 14px; }
