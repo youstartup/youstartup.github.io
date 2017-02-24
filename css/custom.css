@@ -1,6 +1,5 @@
 /*custom css file*/
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400&subset=latin-ext");
 html {
   height: 100%; }
 
@@ -158,27 +157,22 @@ article {
   /* Firefox 18- */
   color: white; }
 
-.jumbotronDenizli {
+.jumbotron, .jumbotronDenizli {
   padding: 0px;
   margin-bottom: 0px;
-  background-image: url(/img/hero-pamukkale-text.jpg);
-  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
   background-color: white; }
 
+.jumbotronDenizli {
+  background-image: url(/img/hero-pamukkale-text.jpg);
+  background-position: top center; }
+
 .jumbotron {
-  padding: 0px;
-  margin-bottom: 0px;
   background-image: url(/img/hero-new.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  background-color: white; }
+  background-position: center center; }
 
 .-grayBg {
   background-color: #eee; }
@@ -266,45 +260,6 @@ footer a:hover {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white; }
-
-#timer {
-  position: relative;
-  display: table;
-  font-family: 'Roboto Mono', monospace;
-  width: 400px;
-  margin: 0 auto;
-  margin-top: 40%;
-  text-align: center;
-  font-size: 66px;
-  font-weight: 200;
-  padding-top: 20px; }
-  @media (max-width: 767px) {
-    #timer {
-      width: 300px;
-      font-size: 46px;
-      padding-top: 100px; } }
-  #timer .sec {
-    border: 0px; }
-  #timer div {
-    position: relative;
-    float: left;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    border-right: 1px solid rgba(255, 255, 255, 0.5); }
-    @media (max-width: 767px) {
-      #timer div {
-        width: 70px; } }
-    #timer div p {
-      position: relative;
-      float: left;
-      top: -22.5px;
-      width: 100%;
-      height: auto;
-      line-height: 20px;
-      text-align: center;
-      font-size: 14px; }
 
 .countdown-container {
   position: absolute;
