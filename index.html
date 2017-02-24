@@ -8,15 +8,9 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
-    <!-- <link href="/css/ekko-lightbox.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,600&amp;subset=latin-ext" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- <script src="/js/respond.js"></script> -->
     <script src="/js/respond.js"></script>
     <script src="https://use.fontawesome.com/049586c38c.js"></script>
-
-    <script type="text/javascript" src="js/TimeCircles.js"></script>
-    <link rel="stylesheet" href="css/TimeCircles.css" />
 
 </head>
 
@@ -39,46 +33,94 @@
 <!-- </div> -->
 
 <div class="jumbotronDenizli">
-<nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
 
-    <div class="container">
+      <div class="container">
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand"><img src="/img/logoWhiteXSmall.png"></div>
-        </div>
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand"><img src="/img/logoWhiteXSmall.png"></div>
+          </div>
 
-        <div class="collapse navbar-collapse navbar-right" id="collapse">
-            <ul class="nav navbar-nav ">
-                <!-- <li><a href="http://www.youstartup.co">Ana sayfa</a></li> -->
-                <!-- <li><a href="#pitchdeck">Başvuru</a></li> -->
-                <li><a href="#katilimcilar">Katılımcılar</a></li>
-                <li><a href="#program">Program</a></li>
-                <li><a href="#iletisim">Kaydol</a></li>
-                <li><a href="#organizasyon">Organizasyon</a></li>
-                <li><a href="http://youstartup.github.io/youstartup">Hikayemiz</a></li>
-            </ul>
-        </div>
-    </div>
+          <div class="collapse navbar-collapse navbar-right" id="collapse">
+              <ul class="nav navbar-nav ">
+                  <!-- <li><a href="http://www.youstartup.co">Ana sayfa</a></li> -->
+                  <!-- <li><a href="#pitchdeck">Başvuru</a></li> -->
+                  <li><a href="#katilimcilar">Katılımcılar</a></li>
+                  <li><a href="#program">Program</a></li>
+                  <li><a href="#iletisim">Kaydol</a></li>
+                  <li><a href="#organizasyon">Organizasyon</a></li>
+                  <li><a href="http://youstartup.github.io/youstartup">Hikayemiz</a></li>
+              </ul>
+          </div>
+      </div>
 
-</nav>
+  </nav>
 
-<div class="container -white">
+  <div class="container -white" style="padding:0px;">
 
-    <!-- Display the countdown timer in an element -->
-    <!-- <div class="title"><span style="font-weight: 300;">4 Mart</span> <span style="font-weight: 400;">Pamukkale</span> <span style="font-weight: 600;">Teknokent</span></div> -->
-    <div id="timer"></div>
-    <!-- <div id="DateCountdown" data-date="2017-03-04 12:00:00" style="width: 500px; height: 125px; padding: 0px; box-sizing: border-box; background-color: #E0E8EF"></div> -->
+    <div class="countdown countdown-container container">
+      <div class="clock row">
+          <div class="clock-item clock-days countdown-time-value">
+              <div class="wrap">
+                  <div class="inner">
+                      <div id="canvas-days" class="clock-canvas"></div>
+
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type-days type-time">gün</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="clock-item clock-hours countdown-time-value">
+              <div class="wrap">
+                  <div class="inner">
+                      <div id="canvas-hours" class="clock-canvas"></div>
+
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type-hours type-time">saat</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="clock-item clock-minutes countdown-time-value">
+              <div class="wrap">
+                  <div class="inner">
+                      <div id="canvas-minutes" class="clock-canvas"></div>
+
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type-minutes type-time">dakika</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="clock-item clock-seconds countdown-time-value">
+              <div class="wrap">
+                  <div class="inner">
+                      <div id="canvas-seconds" class="clock-canvas"></div>
+
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type-seconds type-time">saniye</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
   </div>
-  <!-- <div class="timex"></div> -->
-  <!-- <img src="/img/hero-1600.jpg" class="img-responsive"> -->
-
 </div>
 
 <div class="container-fluid -paddingFix -about">
@@ -373,24 +415,14 @@
 <!-- javascript -->
 	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/ekko-lightbox.js"></script>
+  <script type="text/javascript" src="/js/kinetic.js"></script>
+  <script type="text/javascript" src="/js/jquery.final-countdown.js"></script>
+
   <script>
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
       event.preventDefault();
       $(this).ekkoLightbox();
     });
-
-
-    // $(document).ready(function() {
-    //   $('.thumbnail').click(function(){
-    //         $('.modal-body').empty();
-    //       var title = $(this).parent('a').attr("title");
-    //       $('.modal-title').html(title);
-    //       $($(this).parents('div').html()).appendTo('.modal-body');
-    //       $('#myModal').modal({show:true});
-    //   });
-    // });
-
 
     $(window).load(function(){
       $('a').click(function(){
@@ -401,71 +433,45 @@
       });
     });
   </script>
-  <script>
-// Set the date we're counting down to
-var countDownDate = new Date("mar 4, 2017 12:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+  <script type="text/javascript">
 
-  // Get todays date and time
-  var now = new Date().getTime();
+  $('document').ready(function() {
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
+      'use strict';
+      var start = Date.parse('Wed Feb 20 19:20:44 +0000 2017')/1000;
+      var end = Date.parse('Sat Mar 4 12:00:00 +0000 2017')/1000;
+      var now = new Date().getTime() / 1000;
+      $('.countdown').final_countdown({
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      'start': start,
+      'end': end,
+      'now': now,
+      seconds: {
+          borderColor: 'white',
+          borderWidth: '6'
+      },
+      minutes: {
+          borderColor: 'white',
+          borderWidth: '6'
+      },
+      hours: {
+          borderColor: 'white',
+          borderWidth: '6'
+      },
+      days: {
+          borderColor: 'white',
+          borderWidth: '6'
+      },
 
-  // Display the result in the element with id="demo"
-  document.getElementById("timer").innerHTML = "<div class='day'>" + days + "<p>gün</p></div><div class='hour'>" + hours + "<p>saat</p></div><div class='min'>"
-  + minutes + "<p>dakika</p></div><div class='sec'>" + seconds + "<p>saniye</p></div>";
+      });
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+  });
 
-<!-- <script>
-$(".timex").TimeCircles();
-</script> -->
-<!-- <script>
-    $("#DateCountdown").TimeCircles();
-    $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } }});
-    $("#PageOpenTimer").TimeCircles();
 
-    var updateTime = function(){
-        var date = $("#date").val();
-        var time = $("#time").val();
-        var datetime = date + ' ' + time + ':00';
-        $("#DateCountdown").data('date', datetime).TimeCircles().start();
-    }
-    $("#date").change(updateTime).keyup(updateTime);
-    $("#time").change(updateTime).keyup(updateTime);
+  </script>
 
-    // Start and stop are methods applied on the public TimeCircles instance
-    $(".startTimer").click(function() {
-        $("#CountDownTimer").TimeCircles().start();
-    });
-    $(".stopTimer").click(function() {
-        $("#CountDownTimer").TimeCircles().stop();
-    });
 
-    // Fade in and fade out are examples of how chaining can be done with TimeCircles
-    $(".fadeIn").click(function() {
-        $("#PageOpenTimer").fadeIn();
-    });
-    $(".fadeOut").click(function() {
-        $("#PageOpenTimer").fadeOut();
-    });
-
-</script> -->
 
 </body>
 </html>
