@@ -774,6 +774,44 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/media\/egirisim.png": {
+		"ft": 32768,
+		"iS": 18726,
+		"oA": 0,
+		"oAP": "\/img\/media\/egirisim.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/media\/Icon\r": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/media\/Icon\r",
+		"oF": 0
+		},
+	"\/img\/media\/indir.png": {
+		"ft": 32768,
+		"iS": 24625,
+		"oA": 0,
+		"oAP": "\/img\/media\/indir.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/media\/kampus.png": {
+		"ft": 32768,
+		"iS": 26490,
+		"oA": 0,
+		"oAP": "\/img\/media\/kampus.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/media\/webrazzi.png": {
+		"ft": 32768,
+		"iS": 16673,
+		"oA": 0,
+		"oAP": "\/img\/media\/webrazzi.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/partners\/fi.png": {
 		"ft": 32768,
 		"iS": 5543,
@@ -1138,12 +1176,6 @@
 		"oAP": "\/participants\/okan-sencan.png",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/prepros.cfg": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/prepros.cfg",
-		"oF": 0
 		},
 	"\/presskit\/Icon\r": {
 		"ft": 8192,
